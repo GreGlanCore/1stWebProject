@@ -17,7 +17,7 @@ db_path         = os.path.join(database_folder, 'database.db')  # Set the URI fo
 
 def create_app():
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "gregrasonabe"
+    app.config["SECRET_KEY"] = "GregRasonabe"
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{db_path}"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
